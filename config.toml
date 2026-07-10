@@ -1,0 +1,73 @@
+onboarding = false
+
+[theme]
+name = "catppuccin"
+
+auto_switch = false
+[keys]
+prefix = "cmd+e"
+
+# Plugins
+[[keys.command]]              # open in a split beside your work
+key = "prefix+f"
+type = "shell"
+command = "herdr plugin action invoke open-file-viewer --plugin herdr-file-viewer"
+
+[[keys.command]]              # …or in its own tab
+key = "prefix+shift+f"
+type = "shell"
+command = "herdr plugin action invoke open-file-viewer-tab --plugin herdr-file-viewer"
+
+# -- Prefix actions (cmd+e then key) --
+# Tabs
+next_tab = "prefix+l"
+previous_tab = "prefix+h"
+new_tab = "prefix+c"
+close_tab = "prefix+shift+x"
+rename_tab = "prefix+comma"
+switch_tab = "prefix+1..9"
+
+# Pane splits & focus
+split_vertical = "prefix+v"
+split_horizontal = "prefix+minus"
+focus_pane_left = "prefix+left"
+focus_pane_right = "prefix+right"
+focus_pane_down = "prefix+down"
+focus_pane_up = "prefix+up"
+cycle_pane_next = "prefix+tab"
+cycle_pane_previous = "prefix+shift+tab"
+swap_pane_left = "prefix+shift+h"
+swap_pane_down = "prefix+shift+j"
+swap_pane_up = "prefix+shift+k"
+swap_pane_right = "prefix+shift+l"
+close_pane = "prefix+x"
+zoom = "prefix+z"
+resize_mode = "prefix+r"
+
+# Workspaces
+workspace_picker = "prefix+w"
+new_workspace = "prefix+n"
+close_workspace = "prefix+d"
+rename_workspace = "prefix+shift+w"
+next_workspace = "prefix+shift+n"
+previous_workspace = "prefix+shift+p"
+
+# Navigation & misc
+goto = "prefix+g"
+toggle_sidebar = "prefix+b"
+edit_scrollback = "prefix+e"
+rename_pane = "prefix+shift+e"
+reload_config = "prefix+shift+r"
+detach = "prefix+q"
+copy_mode = "prefix+["
+settings = "prefix+s"
+
+[experimental]
+pane_history = true
+
+[ui]
+show_agent_labels_on_pane_borders = false
+
+agent_panel_sort = "priority"
+[ui.toast]
+delivery = "herdr"

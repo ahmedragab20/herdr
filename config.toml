@@ -20,6 +20,15 @@ key = "prefix+shift+f"
 type = "shell"
 command = "herdr plugin action invoke open-file-viewer-tab --plugin herdr-file-viewer"
 
+# Popups
+[[keys.command]]
+key = "prefix+t"
+type = "popup"
+command = "exec \"${SHELL:-sh}\""
+description = "scratch terminal"
+width = "80%"
+height = "80%"
+
 # -- Prefix actions (cmd+e then key) --
 # Tabs
 next_tab = "prefix+l"

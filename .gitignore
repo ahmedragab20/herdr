@@ -31,3 +31,4 @@ plugins/github/**/.cargo/
 release-notes.json
 
 plugins
+.plugins.lock

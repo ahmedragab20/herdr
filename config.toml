@@ -9,36 +9,13 @@ dark_name = "rose-pine"
 [keys]
 prefix = "cmd+e"
 
-# Plugins
-[[keys.command]]              # open in a split beside your work
-key = "prefix+f"
-type = "shell"
-command = "herdr plugin action invoke open-file-viewer --plugin herdr-file-viewer"
-
-[[keys.command]]              # …or in its own tab
-key = "prefix+shift+f"
-type = "shell"
-command = "herdr plugin action invoke open-file-viewer-tab --plugin herdr-file-viewer"
-
-# Popups
-[[keys.command]]
-key = "prefix+t"
-type = "popup"
-command = "exec \"${SHELL:-sh}\""
-description = "scratch terminal"
-width = "80%"
-height = "80%"
-
-# -- Prefix actions (cmd+e then key) --
-# Tabs
+# Built-in actions
 next_tab = "prefix+l"
 previous_tab = "prefix+h"
 new_tab = "prefix+c"
 close_tab = "prefix+shift+x"
 rename_tab = "prefix+comma"
 switch_tab = "prefix+1..9"
-
-# Pane splits & focus
 split_vertical = "prefix+v"
 split_horizontal = "prefix+minus"
 focus_pane_left = "prefix+left"
@@ -54,16 +31,12 @@ swap_pane_right = "prefix+shift+l"
 close_pane = "prefix+x"
 zoom = "prefix+z"
 resize_mode = "prefix+r"
-
-# Workspaces
 workspace_picker = "prefix+w"
 new_workspace = "prefix+n"
 close_workspace = "prefix+d"
 rename_workspace = "prefix+shift+w"
 next_workspace = "prefix+shift+n"
 previous_workspace = "prefix+shift+p"
-
-# Navigation & misc
 goto = "prefix+g"
 toggle_sidebar = "prefix+b"
 edit_scrollback = "prefix+e"
@@ -73,12 +46,31 @@ detach = "prefix+q"
 copy_mode = "prefix+["
 settings = "prefix+s"
 
+# Custom commands (plugin actions and popups)
+[[keys.command]]
+key = "prefix+f"
+type = "shell"
+command = "herdr plugin action invoke open-file-viewer --plugin herdr-file-viewer"
+
+[[keys.command]]
+key = "prefix+shift+f"
+type = "shell"
+command = "herdr plugin action invoke open-file-viewer-tab --plugin herdr-file-viewer"
+
+[[keys.command]]
+key = "prefix+t"
+type = "popup"
+command = "exec \"${SHELL:-sh}\""
+description = "scratch terminal"
+width = "80%"
+height = "80%"
+
 [experimental]
 pane_history = true
 
 [ui]
 show_agent_labels_on_pane_borders = false
-
 agent_panel_sort = "priority"
+
 [ui.toast]
 delivery = "herdr"

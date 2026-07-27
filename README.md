@@ -13,5 +13,6 @@ Prefix: <kbd>Cmd</kbd>+<kbd>E</kbd>
 - <kbd>prefix</kbd>+<kbd>v</kbd> / <kbd>-</kbd> — split vertical / horizontal
 - <kbd>prefix</kbd>+<kbd>w</kbd> / <kbd>n</kbd> / <kbd>d</kbd> — workspace picker / new / close
 - <kbd>prefix</kbd>+<kbd>s</kbd> — settings, <kbd>prefix</kbd>+<kbd>shift</kbd>+<kbd>r</kbd> — reload config
+- <kbd>prefix</kbd>+<kbd>t</kbd> — toggle popup terminal (close with <kbd>ctrl</kbd>+<kbd>d</kbd>)
 
 See [`config.toml`](config.toml) for the full mapping.

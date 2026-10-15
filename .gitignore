@@ -32,3 +32,6 @@ release-notes.json
 
 plugins
 .plugins.lock
+
+herdr.sock.agent
+session-snapshots/

@@ -2,7 +2,7 @@ onboarding = false
 
 [theme]
 name = "rose-pine"
-auto_switch = true
+auto_switch = false
 light_name = "rose-pine-dawn"
 dark_name = "rose-pine"
 
@@ -45,6 +45,8 @@ reload_config = "prefix+shift+r"
 detach = "prefix+q"
 copy_mode = "prefix+["
 settings = "prefix+s"
+next_agent = ["prefix+a", "ctrl+shift+down"]
+previous_agent = ["prefix+shift+a", "ctrl+shift+up"]
 
 # Custom commands (plugin actions and popups)
 [[keys.command]]
@@ -66,11 +68,13 @@ width = "80%"
 height = "80%"
 
 [experimental]
+allow_nested = true
 pane_history = true
 
 [ui]
-show_agent_labels_on_pane_borders = false
+pane_scrollbars = false
+show_agent_labels_on_pane_borders = true
 agent_panel_sort = "priority"
 
 [ui.toast]
-delivery = "herdr"
+delivery = "terminal"
